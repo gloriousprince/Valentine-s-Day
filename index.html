@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Happy Valentine's Day 💖</h1>
+    <p>You're my favorite person in the world! 🌹</p>
+
+    <button id="loveBtn">Click for a Surprise! 💌</button>
+
+    <div id="surprise" class="hidden">
+        <img src="src/hearts.jpg" alt="Love">
+        <p>Will you be my girlfriend?💕</p>
+
+        <!-- Yes and No Buttons -->
+        <div class="buttons">
+            <button id="yesBtn">Yes 💖</button>
+            <button id="noBtn">No 😢</button>
+        </div>
+
+        <p id="response"></p> <!-- Response Message -->
+
+        <!-- Video (Initially Hidden) -->
+        <video id="yesVideo" class="hidden" width="300" controls>
+            <source src="src/me dancing.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Link to Gallery (Hidden by Default) -->
+        <div id="galleryContainer" class="hidden">
+            <a href="gallery.html" id="galleryLink" class="gallery-btn">View Our Memories 📸</a>
+        </div>
+    </div>
+</div>
+
+<!-- Hearts Container for Animation -->
+<div id="hearts-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
